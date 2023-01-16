@@ -1,15 +1,16 @@
 @import url(landing.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-body{
-    background:none;
-    background-color: #2d2d2d;
+body {
+  background: none;
+  background-color: #2d2d2d;
 }
 
-.checkboxes{
-    position : relative ;
-    top: 70px;
+.checkboxes {
+  position: relative;
+  top: 70px;
 }
+
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
@@ -20,9 +21,11 @@ body{
   max-width: 600px;
   user-select: none;
 }
-.checkbox-group > * {
+
+.checkbox-group>* {
   margin: 0.5rem 0.5rem;
 }
+
 .checkbox-group-legend {
   font-size: 1.5rem;
   font-weight: 700;
@@ -31,6 +34,7 @@ body{
   line-height: 1.125;
   margin-bottom: 1.25rem;
 }
+
 .checkbox-input {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
@@ -40,28 +44,35 @@ body{
   white-space: nowrap;
   width: 1px;
 }
-.checkbox-input:checked + .checkbox-tile {
+
+.checkbox-input:checked+.checkbox-tile {
   border-color: #2260ff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #2260ff;
 }
-.checkbox-input:checked + .checkbox-tile:before {
+
+.checkbox-input:checked+.checkbox-tile:before {
   transform: scale(1);
   opacity: 1;
   background-color: #2260ff;
   border-color: #2260ff;
 }
-.checkbox-input:checked + .checkbox-tile .checkbox-icon, .checkbox-input:checked + .checkbox-tile .checkbox-label {
+
+.checkbox-input:checked+.checkbox-tile .checkbox-icon,
+.checkbox-input:checked+.checkbox-tile .checkbox-label {
   color: #2260ff;
 }
-.checkbox-input:focus + .checkbox-tile {
+
+.checkbox-input:focus+.checkbox-tile {
   border-color: #2260ff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
 }
-.checkbox-input:focus + .checkbox-tile:before {
+
+.checkbox-input:focus+.checkbox-tile:before {
   transform: scale(1);
   opacity: 1;
 }
+
 .checkbox-tile {
   display: flex;
   flex-direction: column;
@@ -77,6 +88,7 @@ body{
   cursor: pointer;
   position: relative;
 }
+
 .checkbox-tile:before {
   content: "";
   position: absolute;
@@ -96,21 +108,26 @@ body{
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .checkbox-tile:hover {
   border-color: #2260ff;
 }
+
 .checkbox-tile:hover:before {
   transform: scale(1);
   opacity: 1;
 }
+
 .checkbox-icon {
   transition: 0.375s ease;
   color: #494949;
 }
+
 .checkbox-icon svg {
   width: 3rem;
   height: 3rem;
 }
+
 .checkbox-label {
   color: #707070;
   transition: 0.375s ease;
@@ -118,87 +135,98 @@ body{
 }
 
 
-.blog{
-    width: 70vw;
-    min-width: 400px;
-    height: 100px;
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-    padding: 50px 0;
-    
+.blog {
+  width: 70vw;
+  min-width: 400px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px 0;
+
 }
 
-textarea::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
+textarea::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-textarea::-webkit-scrollbar-thumb{
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+textarea::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .title,
-.article{
-    width: 100%;
-    min-height: 100px;
-    height: auto;
-    outline: none;
-    font-size: 50px;
-    font-weight: 600;
-    color: #2d2d2d;
-    resize: none;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
+.article {
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  outline: none;
+  font-size: 50px;
+  font-weight: 600;
+  color: #2d2d2d;
+  resize: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .title::placeholder,
-.article::placeholder{
-    color: #2d2d2d;
+.article::placeholder {
+  color: #2d2d2d;
 }
 
-.article{
-    height: 100px;
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 30px;
-    font-weight: 500;
-    padding-bottom: 100px;
-    white-space: pre-wrap;
+.article {
+  height: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-bottom: 100px;
+  white-space: pre-wrap;
 }
 
 
-.btn{
-    padding: 10px 20px;
-    background: #d73851;
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.btn {
+  padding: 10px 20px;
+  background: #d73851;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
 .blog .btn{
-    position: absolute;
-    left: 700px;
-    bottom: 35px;
+  margin-left: 40%;
+  margin-right: 50%;
 }
 
 
-nav .btn{
-    background: none;
-}   
+nav .btn {
+  background: none;
+}
 
-.alert{
-    width: 100%;
-    background: #d73851;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    display: none;
+.alert {
+  width: 100%;
+  background: #d73851;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+
+@media all and (max-width:800px) {
+
+  .checkboxes {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width:360px) {
+  .checkboxes {
+    margin-top: 50px;
+  }
 }

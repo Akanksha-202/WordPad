@@ -1,129 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/0e976787b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/blogread.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/0e976787b4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/blogread.css">
 </head>
+
 <body>
-    <div class="wrapper">
 
-        <div class="header">
-          <h1 class="header__title">Blogs</h1>
-          <h2 class="header__subtitle">for you!</h2>
+  <div class="tabset">
+    <!-- Tab 1 -->
+    <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+    <label for="tab1">Development</label>
+    <!-- Tab 2 -->
+    <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+    <label for="tab2">AI & Data Sciences</label>
+    <!-- Tab 3 -->
+    <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+    <label for="tab3">AR/VR</label>
+
+
+    <div class="tab-panels">
+      <section id="marzen" class="tab-panel">
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+            <ul class="details">
+              <li class="author">Jenny sabarwal</li>
+              <li class="date">July. 15, 2022</li>
+              <li class="tags">
+                <ul>
+                  <li>Learn</li>
+                  <li>Code</li>
+                  <li>JavaScript</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1> Wired
+            </h1>
+            <h2>It comes with advanced technology.
+
+            </h2>
+            <p>Wired is a massively popular publication, good at capturing real insights into the tech world, no
+              stranger to topics like technology, entertainment, science, culture, politics, and social media. informed
+              and comprehensive, wired is basically the perfect tech blog to follow.
+            </p>
+            <p class="read-more">
+              <a href="../html/blogpage.html">Read More</a>
+            </p>
+          </div>
         </div>
-      
-        <div class="cards" id="blogr">
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Wired</span>
-              <i class="fa fa-folder-o"></i>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://w0.peakpx.com/wallpaper/116/459/HD-wallpaper-microchip-neon-lines-black-background-chips-technology-backgrounds.jpg)">
             </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Wired is a massively popular publication, good at capturing real insights into the tech world, no stranger to topics like technology, entertainment, science, culture, politics, and social media. Informed and comprehensive, Wired is basically the perfect tech blog to follow.
-            </div>
+            <ul class="details">
+              <li class="author"><a href="#">Akanksha</a></li>
+              <li class="date">May. 15, 2022</li>
+              <li class="tags">
+                <ul>
+                  <li>Learn</li>
+                  <li>Code</li>
+                  <li>JavaScript</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>TechCrunch</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              TechCrunch offers knowledge about new gizmos and business-related apps. It is like a reservoir of information on Internet companies & startups around the world.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Recode</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Currently, owned by VOX media, Recode gives the most updated independent technology news, analysis trends, and reviews from the most respected and informed journalists as well as bloggers in media and technology.
+          <div class="description">
+            <h1>Recode
+            </h1>
+            <h2>Media and tech!
 
-
-            </div>
+            </h2>
+            <p>Currently, owned by vox media, recode gives the most updated independent technology news, analysis
+              trends, and reviews from the most respected and informed journalists as well as bloggers in media and
+              technology.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
           </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Mashable</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Mashable provides information to those who wish to catch up on all most everything happening around the tech world including movies, travel, finance, and, of course, gadgets.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>CNET</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              It offers trusty guides, instructional videos, and up-to-the-minute news on everything from technology to sports. Especially, when considering buying a new gadget, CNET should be your first stop to provide a genuine reviews, and pricing, making it one of the best technology blogs to check out.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Apple Insider</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Launched over 20 years ago as a news and rumor website for Apple products and services, appleinsider.com includes a forum for discussion of news stories and other community news.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Techdirt.</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Techdirt is an internet blog that reports on technology's legal challenges and related business and economic policy issues, in context of the digital revolution.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>SiliconANGLE</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              SiliconAngle is a modern digital media platform that creates engaging social experiences for audiences through a depth of research, the reach of publishing, and relevance of live video.
-            </div>
-          </div>
-      
-          <div class=" card [ is-collapsed ] ">
-            <div class="card__inner [ js-expander ]">
-              <span>Tech in Asia</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              Tech in Asia is a media, events, and jobs platform on a mission to build and serve Asia’s tech and startup community. On the website users can keep abreast of the latest news.
-            </div>
-          </div>
-      
         </div>
-      
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-      <script src="../js/blogread.js"></script>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://wallpapercave.com/wp/wp1997607.jpg)"></div>
+            <ul class="details">
+              <li class="author">Samiksha</li>
+              <li class="date">Jan 01, 2023</li>
+              <li class="tags">
+                <ul>
+                  <li>Learn</li>
+                  <li>Code</li>
+                  <li>JavaScript</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Techcrunch
+            </h1>
+            <h2>All about tech!
+
+            </h2>
+            <p>Techcrunch offers knowledge about new gizmos and business-related apps. it is like a reservoir of
+              information on internet companies & startups around the world.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+
+
+      </section>
+      <section id="rauchbier" class="tab-panel">
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://wallpapercave.com/wp/wp1997607.jpg)"></div>
+            <ul class="details">
+              <li class="author"><a href="#"> The Guardian</a></li>
+              <li class="date">Mar. 10, 2019</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">Africa</a></li>
+                  <li><a href="#">Redington</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Mashable</h1>
+            <h2>Opening a door to the future</h2>
+            <p> Mashable provides information to those who wish to catch up on all most everything happening around the
+              tech world including movies, travel, finance, and, of course, gadgets.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?b=1&s=612x612&w=0&k=20&c=bpQMsH07ziELXla0SZJt84-w0JkxsVXs05c7T2Iygks=)">
+            </div>
+            <ul class="details">
+              <li class="author"><a href="#"> The Guardian</a></li>
+              <li class="date">Mar. 10, 2019</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">Africa</a></li>
+                  <li><a href="#">Redington</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>CNET</h1>
+            <h2>Guide and trust</h2>
+            <p> It offers trusty guides, instructional videos, and up-to-the-minute news on everything from technology
+              to sports. especially, when considering buying a new gadget, cnet should be your first stop to provide a
+              genuine reviews, and pricing, making it one of the best technology blogs to check out.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://w0.peakpx.com/wallpaper/1020/187/HD-wallpaper-apple-company-apple-high-sign-beautiful-technology-glass-iphine-computer-company-white.jpg)">
+            </div>
+            <ul class="details">
+              <li class="author"><a href="#"> The Guardian</a></li>
+              <li class="date">Mar. 10, 2019</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">Africa</a></li>
+                  <li><a href="#">Redington</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="description">
+            <h1>Apple Insider</h1>
+            <h2>Opening a door to the future</h2>
+            <p> Launched over 20 years ago as a news and rumor website for apple products and services, appleinsider.com
+              includes a forum for discussion of news stories and other community news.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <section id="tab4" class="tab-panel">
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://media.istockphoto.com/id/1325087896/photo/apple-park-hq.jpg?b=1&s=170667a&w=0&k=20&c=GJUFIr3pFaPaw68l-4-Uf3JGXutBZo7C0Mm0ugGI06Q=)">
+            </div>
+            <ul class="details">
+              <li class="author"><a href="#">Jane Doe</a></li>
+              <li class="date">July. 15, 2015</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Code</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Silicone Angle
+            </h1>
+            <h2>It comes with advanced technology.
+
+            </h2>
+            <p>Siliconangle is a modern digital media platform that creates engaging social experiences for audiences
+              through a depth of research, the reach of publishing, and relevance of live video. </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://pandorafms.com/blog/wp-content/uploads/2022/04/Que-es-Active-Directory-1080x675.png)">
+            </div>
+            <ul class="details">
+              <li class="author"><a href="#">Jane Doe</a></li>
+              <li class="date">sJuly. 15, 2015</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Code</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Techdirectory
+            </h1>
+            <h2>Internet challenges!
+
+            </h2>
+            <p>Techdirt is an internet blog that reports on technology's legal challenges and related business and
+              economic policy issues, in context of the digital revolution. </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://media.istockphoto.com/id/1401460590/photo/businessman-working-on-laptop-with-document-management-icon.jpg?b=1&s=170667a&w=0&k=20&c=4H439mT0eE_ltwbhV6MNmDNnkyzIVM-D1DQ3qvbI6eE=)">
+            </div>
+            <ul class="details">
+              <li class="author"><a href="#">Jane Doe</a></li>
+              <li class="date">July. 15, 2015</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Code</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Tech in ASIA
+            </h1>
+            <h2>It comes with advanced technology.
+
+            </h2>
+            <p>Tech in asia is a media, events, and jobs platform on a mission to build and serve asia’s tech and
+              startup community. on the website users can keep abreast of the latest news.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo"
+              style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+            <ul class="details">
+              <li class="author"><a href="#">Jane Doe</a></li>
+              <li class="date">July. 15, 2015</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Code</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Apple Launches iPhone
+            </h1>
+            <h2>It comes with advanced technology.
+
+            </h2>
+            <p>Speaking at the launch, Head West Africa Operations, Redington, Sivadoss Vijayakumar, emphasized the
+              importance of innovation and excellent design in creating devices.
+            </p>
+            <p class="read-more">
+              <a href="blogpage.html">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="../js/blogread.js"></script>
 </body>
+
 </html>
